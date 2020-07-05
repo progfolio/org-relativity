@@ -1,34 +1,56 @@
 * Make a PB&J Sandwich [0/5]
-SCHEDULED: <2020-07-05 Sun 09:30>
+SCHEDULED: <2020-07-05 Sun 00:00>
 :PROPERTIES:
+:relativity: 1
 :END:
 
 ** TODO toast bread
-SCHEDULED: <2020-07-05 Sun 09:30>
+SCHEDULED: <2020-07-05 Sun 00:00>
 :PROPERTIES:
 :Effort:   0:05
 :END:
 
 ** TODO spread peanut butter
-SCHEDULED: <2020-07-05 Sun 09:35>
+SCHEDULED: <2020-07-05 Sun 00:05>
 :PROPERTIES:
 :Effort:   0:10
 :END:
 
 ** TODO spread jelly
-SCHEDULED: <2020-07-05 Sun 09:45>
+SCHEDULED: <2020-07-05 Sun 00:15>
 :PROPERTIES:
 :Effort:   0:10
 :END:
 
 ** TODO assemble
-SCHEDULED: <2020-07-05 Sun 09:55>
+SCHEDULED: <2020-07-05 Sun 00:25>
 :PROPERTIES:
 :Effort:   1:00
 :END:
 
 ** TODO eat
-SCHEDULED: <2020-07-05 Sun 10:55>
+SCHEDULED: <2020-07-05 Sun 01:25>
 :PROPERTIES:
 :Effort:   0:15
 :END:
+
+* TODO TASK [0/5]
+** TODO 1
+SCHEDULED: <2020-07-04 Sat 02:56>
+:PROPERTIES:
+:Effort:   2:00
+:END:
+** 2 [0/3]
+*** TODO 2.1
+:PROPERTIES:
+:Effort:   0:15
+:END:
+*** TODO 2.2
+:PROPERTIES:
+:Effort:   0:15
+:END:
+*** TODO 2.3
+:PROPERTIES:
+:Effort:   0:15
+:END:
+** TODO 3
