@@ -1,0 +1,34 @@
+* Make a PB&J Sandwich [0/5]
+SCHEDULED: <2020-07-05 Sun 09:30>
+:PROPERTIES:
+:END:
+
+** TODO toast bread
+SCHEDULED: <2020-07-05 Sun 09:30>
+:PROPERTIES:
+:Effort:   0:05
+:END:
+
+** TODO spread peanut butter
+SCHEDULED: <2020-07-05 Sun 09:35>
+:PROPERTIES:
+:Effort:   0:10
+:END:
+
+** TODO spread jelly
+SCHEDULED: <2020-07-05 Sun 09:45>
+:PROPERTIES:
+:Effort:   0:10
+:END:
+
+** TODO assemble
+SCHEDULED: <2020-07-05 Sun 09:55>
+:PROPERTIES:
+:Effort:   1:00
+:END:
+
+** TODO eat
+SCHEDULED: <2020-07-05 Sun 10:55>
+:PROPERTIES:
+:Effort:   0:15
+:END:

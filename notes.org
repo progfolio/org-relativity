@@ -1,0 +1,42 @@
+* Goal
+To make it easier to schedule tasks relative to one another.
+
+* Notes
+Initial implementation will not use org timestamp syntax.
+Rather, focus on functionality and defining the features/problem space.
+Use custom properties  for now.
+
+* Implementation
+Every relative timestamp must have a target.
+The target determines the relative task's time.
+The target may be a relative timestamp itself.
+
+** Targets
+*** id
+Scheduled relative to entry with ID.
+*** parent
+Scheduled relative to its parent
+*** sibling
+Scheduled relative to its sibling
+*** First available
+Scheduled in first available time slot of the day
+*** Last available
+Scheduled in last available time slot of the day
+go to end of day and subtract duration if present
+** Computing
+*** find root target's time
+*** compute relative to that time
+*** set appropriate timestamps
+** Recomputation
+*** Any time ancestor modified, recompute rest of chain.
+* Relative scheduled vs relative deadline?
+* data representation?
+Use a single property with a plist?
+#+begin_src emacs-lisp
+:ORT: (:target "1a2b3c4d" :scheduled "+1h" :deadline "+2h"
+#+end_src
+** TODO test
+:PROPERTIES:
+:Effort:   0:30
+:Ort: (:target "1a2b3c4d" :deadline "+1h")
+:END:
