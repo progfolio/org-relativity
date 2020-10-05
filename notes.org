@@ -1,12 +1,11 @@
 * Goal
 To make it easier to schedule tasks relative to one another.
 
-* Notes
-Initial implementation will not use org timestamp syntax.
-Rather, focus on functionality and defining the features/problem space.
-Use custom properties  for now.
-
 * Implementation
+Initial implementation will not use org timestamp syntax.
+For now, we focus on functionality and defining the features/problem space.
+However, it would be nice to have a syntax for these features that is similar to the existing timestamp syntax.
+
 Every relative timestamp must have a target.
 The target determines the relative task's time.
 The target may be a relative timestamp itself.
@@ -23,20 +22,27 @@ Scheduled in first available time slot of the day
 *** Last available
 Scheduled in last available time slot of the day
 go to end of day and subtract duration if present
-** Computing
-*** find root target's time
-*** compute relative to that time
-*** set appropriate timestamps
-** Recomputation
-*** Any time ancestor modified, recompute rest of chain.
-* Relative scheduled vs relative deadline?
+*** time
+Schedule relative to a fixed time?
 * data representation?
 Use a single property with a plist?
 #+begin_src emacs-lisp
-:ORT: (:target "1a2b3c4d" :scheduled "+1h" :deadline "+2h"
+:relativity: (:target "1a2b3c4d" :scheduled "+1h" :deadline "+2h"
 #+end_src
-** TODO test
+#+begin_example
+,** TODO test
 :PROPERTIES:
 :Effort:   0:30
-:Ort: (:target "1a2b3c4d" :deadline "+1h")
+:relativity: (:target "1a2b3c4d" :deadline "+1h")
 :END:
+#+end_example
+* Feature                                                           :feature:
+** IDEA only modify timestamp with matching type
+
+e.g. if Modifying CLOSED time, only modify close times
+Same for SCHEDULED vs. DEADLINE
+* Bug                                                                   :bug:
+** RESEARCH why can't we use simple :after advice?
+Seems to destroy &optional arg being passed through to the advised function.
+* Miscellaneous                                               :miscellaneous:
+** RESEARCH list of all commands we want to advise
