@@ -30,6 +30,9 @@ Argument EFFORT tbd.")
   (when-let ((relativity (org-entry-get (point) "relativity")))
     (and (read relativity) t)))
 
+(defun org-relativity-root ()
+  "Goto root of outline.")
+
 (defun org-relativity-schedule-tree (&rest _args)
   "Do something."
   (interactive)
